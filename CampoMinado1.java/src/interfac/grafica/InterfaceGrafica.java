@@ -2,10 +2,13 @@ package interfac.grafica;
 
 import javax.swing.JFrame;
 
+import fase.Fase;
+
 public class InterfaceGrafica extends JFrame {
 
 	//classe construtor
 	public InterfaceGrafica() {
+		add (new Fase());
 		setTitle ("Campo Minado");//nome do jogo, será mostrado quando rodar o codigo
 		setSize(1024,728);//dimensao do jogo
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE );//o X agora fecha a aba do jogo
